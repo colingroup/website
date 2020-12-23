@@ -1,0 +1,213 @@
+2020-09-04 10:14:26
+User_id: 0
+Error: E_PARSE
+URL: https://findsingles.online/
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 388
+Message: syntax error, unexpected 'ннн' (T_STRING), expecting function (T_FUNCTION)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-09-04 10:15:17
+User_id: 0
+Error: E_PARSE
+URL: https://findsingles.online/
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 388
+Message: syntax error, unexpected 'ннн' (T_STRING), expecting function (T_FUNCTION)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-09-04 10:15:22
+User_id: 0
+Error: E_PARSE
+URL: https://findsingles.online/
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 388
+Message: syntax error, unexpected 'ннн' (T_STRING), expecting function (T_FUNCTION)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-09-04 10:21:36
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/social_login.php?module=vk
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 210
+Message: Undefined index: state
+
+Call stack:
+
+File: D:\findsingles_online\social_login.php (Line: 23)
+Class: vk
+Function: oAuthApi
+
+$_POST = Array
+(
+    [code] => cf59a7024bafc48aea509585575aaa459.0.nryxq.GOslxxyQ-wAEM_cNPNJqmQ
+    [user] => {"email":"qd8srbzwhf@privaterelay.appleid.com"}
+)
+
+---------
+
+2020-09-04 10:23:19
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/social_login.php?module=vk
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 210
+Message: Undefined index: state
+
+Call stack:
+
+File: D:\findsingles_online\social_login.php (Line: 23)
+Class: vk
+Function: oAuthApi
+
+$_POST = Array
+(
+    [code] => c053ea584e3a9436f86f0cdebae201d78.0.nryxq.vpxM75itqUzdg8r-2P5auQ
+)
+
+---------
+
+2020-09-04 10:24:27
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/social_login.php?module=vk
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 210
+Message: Undefined index: state
+
+Call stack:
+
+File: D:\findsingles_online\social_login.php (Line: 23)
+Class: vk
+Function: oAuthApi
+
+$_POST = Array
+(
+    [state] => 30ab04d69e
+    [code] => c6329da3ef03a4f7c8288c7b8ddf59856.0.nryxq.s8eKPLPGilM4Gt3120lvWw
+)
+
+---------
+
+2020-09-04 10:27:14
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/social_login.php?module=vk
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 210
+Message: Undefined index: state
+
+Call stack:
+
+File: D:\findsingles_online\social_login.php (Line: 23)
+Class: vk
+Function: oAuthApi
+
+$_POST = Array
+(
+    [state] => 30ab04d69e
+    [code] => c1929c92f3bf245c89127a329657bd6a2.0.nryxq.hm6pQ_bmpZhZ4qvSx5aLHw
+)
+
+---------
+
+2020-09-04 13:28:31
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/social_login.php?module=vk
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 269
+Message: Trying to get property of non-object
+
+Call stack:
+
+File: D:\findsingles_online\social_login.php (Line: 23)
+Class: vk
+Function: oAuthApi
+
+$_POST = Array
+(
+    [code] => c07ab04f884b3465f9bde49b46730647d.0.nrqxt.dP0viNgN_0vSoOBbIRuyxQ
+)
+
+---------
+
+2020-09-04 14:00:47
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/join_facebook.php?cmd=vk_login
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 145
+Message: Undefined index: id
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\social.class.php (Line: 265)
+Class: vk
+Function: setJoinInfo
+
+File: D:\findsingles_online\join_facebook.php (Line: 40)
+Class: Social
+Function: login
+
+---------
+
+2020-09-04 14:03:58
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/join_facebook.php?cmd=vk_login
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 145
+Message: Undefined index: id
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\social.class.php (Line: 265)
+Class: vk
+Function: setJoinInfo
+
+File: D:\findsingles_online\join_facebook.php (Line: 40)
+Class: Social
+Function: login
+
+---------
+
+2020-09-04 14:04:00
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/join_facebook.php?cmd=vk_login
+File: D:\findsingles_online\_include\current\vk.class.php
+Line: 145
+Message: Undefined index: id
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\social.class.php (Line: 265)
+Class: vk
+Function: setJoinInfo
+
+File: D:\findsingles_online\join_facebook.php (Line: 40)
+Class: Social
+Function: login
+
+---------
+

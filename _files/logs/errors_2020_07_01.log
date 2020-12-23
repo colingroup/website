@@ -1,0 +1,74 @@
+2020-07-01 00:00:53
+User_id: 0
+Error: E_WARNING
+URL: https://findsingles.online/administration/ajax.php?&set_template_administration_runtime=default&site_part_runtime=administration
+File: D:\findsingles_online\_include\lib\lib.php
+Line: 1789
+Message: get_headers(): This function may only be used against URLs
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 1789)
+Function: get_headers
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 1819)
+Function: get_headers_file
+
+File: D:\findsingles_online\_include\lib\image.php (Line: 75)
+Function: url_file_exists
+
+File: D:\findsingles_online\_include\current\cprofilephoto.class.php (Line: 118)
+Class: Image
+Function: loadImage
+
+File: D:\findsingles_online\administration\ajax.php (Line: 134)
+Class: CProfilePhoto
+Function: photoRotate
+
+$_POST = Array
+(
+    [cmd] => rotate_photo
+    [photo_id] => 1010001
+    [angle] => 90
+    [user_id] => 97002
+)
+
+---------
+
+2020-07-01 00:01:00
+User_id: 0
+Error: E_WARNING
+URL: https://findsingles.online/administration/ajax.php?&set_template_administration_runtime=default&site_part_runtime=administration
+File: D:\findsingles_online\_include\lib\lib.php
+Line: 1789
+Message: get_headers(): This function may only be used against URLs
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 1789)
+Function: get_headers
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 1819)
+Function: get_headers_file
+
+File: D:\findsingles_online\_include\lib\image.php (Line: 75)
+Function: url_file_exists
+
+File: D:\findsingles_online\_include\current\cprofilephoto.class.php (Line: 118)
+Class: Image
+Function: loadImage
+
+File: D:\findsingles_online\administration\ajax.php (Line: 134)
+Class: CProfilePhoto
+Function: photoRotate
+
+$_POST = Array
+(
+    [cmd] => rotate_photo
+    [photo_id] => 1010001
+    [angle] => 90
+    [user_id] => 97002
+)
+
+---------
+

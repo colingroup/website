@@ -1,0 +1,620 @@
+2020-06-07 12:07:20
+User_id: 99029
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99025
+    [msg] => Hi
+    [send] => 1591502840785
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:07:29
+User_id: 99029
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99025
+    [msg] => Hi
+    [send] => 1591502849944
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:07:34
+User_id: 99029
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99025
+    [msg] => Vuvuvuvuv
+    [send] => 1591502854861
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:08:03
+User_id: 99025
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => Bhj
+    [send] => 1591502881271
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:08:12
+User_id: 99025
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => cgchchchchchc
+    [send] => 1591502891510
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:08:15
+User_id: 99025
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => chhchchvjv
+    [send] => 1591502894239
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:08:16
+User_id: 99025
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => hchchchchvu
+    [send] => 1591502896414
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:08:18
+User_id: 99025
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => hchchcuvu
+    [send] => 1591502898633
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:10:02
+User_id: 99025
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => chchc
+    [send] => 1591503001303
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-06-07 12:10:28
+User_id: 99029
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: <HTML>
+<HEAD>
+<TITLE>INVALID_KEY_TYPE</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>INVALID_KEY_TYPE</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 86)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99025
+    [msg] => Hibi
+    [send] => 1591503029525
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+

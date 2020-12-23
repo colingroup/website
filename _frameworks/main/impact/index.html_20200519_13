@@ -1,0 +1,98 @@
+{header}
+    <div class="bl_join_done">
+        <div class="slogan">{l_join_the_best_dating_site_in_the_world}</div>
+    <div class="bl_title var info_block">     
+        <div class="title_icon">
+            <h1>
+                {l_meet_new_people_in} <a id="country" href="{url_main}{url_page_search_results}?{type_location}={ip_city_id}{params}" style="color:white;text-decoration: underline;">{ip_city_title}</a>!     
+                {main_page_title_location_image}
+            </h1>
+            <span>{l_chat_with_fun_new_people_share_photos_and_interests_even_date}</span>
+        </div>  
+        <div class="main_arrow"></div>     
+    </div>
+<style>
+.bl_title, .main_pic .bl_title, .cont_w_animated_custom .bl_title {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+ .bl_title {
+    /* background-color: rgba(255, 255, 255, 1); */
+    position: absolute;
+    bottom: 25px;
+    padding: 15px 19px 18px;
+    margin: 0;
+    border-radius: 10px;
+}
+.info_block {
+left: 30% !important;
+    bottom: 27px !important;
+    background: transparent;
+    color: white;
+}
+
+ .title_icon{ padding-bottom: 0; min-height: 64px; }
+ .bl_title.var .title_icon{ background: url(../images/icon_title2.png) 0 0 no-repeat; }
+.bl_title.var .title_icon h1{ color: #ffffff94; }
+.main_arrow{ right: -240px; /*top: -95px;*/ top: -72px; }
+.bl_map{ height: 375px; position: relative; margin: 20px 0 10px;  }
+.bl_google_map{ width: 815px; height: 359px; margin: 0 0 0 -125px; }
+.google_map_shadow{width: 863px; height: 375px; position: absolute; top: 0; margin: 0 0 0 -145px;}
+.google_map_shadow_transparent{ background: transparent!important;}
+.map_interests_chart{ background: transparent!important;}
+
+</style>
+        <form id="frm_join_index_step_1" action="{url_main}{url_page_join}" method="POST">
+            <div class="bl_form bl_form_index">
+                <!-- begin_title_join -->
+                <label>{l_i_am}</label>
+                <!-- end_title_join -->
+                <!-- begin_field_sexuality -->
+                <div class="bl_select">
+                <select name="p_sexuality" class="select_main select_index">
+                {options_sexuality}
+                </select>
+                </div>
+                <!-- end_field_sexuality -->
+                <!-- begin_field_orientation -->
+                <div class="bl_select">
+                    <select id="bl_join_done_orientation" name="orientation" class="select_main select_index">
+                    {options_orientation}
+                    </select>
+                    <div id="orientation_error" class="error to_hide">{l_orientation_is_required}</div>
+                </div>
+                <!-- end_field_orientation -->
+                <button id="frm_join_index_step_btn_submit" type="submit" class="btn pink"><span>{l_continue}</span></button>
+                <script>if(!$('.select_index')[0])$jq('.bl_form_index').addClass('show');</script>
+            </div>
+        </form>
+        <script>
+
+        $('.select_main','.bl_form_index').styler({
+            selectAutoWidth : false,
+            selectAppearsNativeToIOS: false,
+            selectAnimation: true
+
+        });
+        $jq('#bl_join_done_orientation').styler({
+            onSelectOpened:function(){
+                $('#orientation_error').addClass('to_hide');
+            }
+        })
+
+        $('#frm_join_index_step_1').submit(function(){
+            var $frm=$(this),isError=false;
+            $('select',$frm).each(function(){
+                if(!this.value || this.value == 0){
+                    isError=true;
+                    $('#'+this.name+'_error').removeClass('to_hide');
+                }
+            })
+            if(isError){
+                return false;
+            }
+            $jq('#frm_join_index_step_btn_submit').addChildrenLoader();//.prop('disabled', true)
+        })
+        </script>
+    </div>
+{footer}

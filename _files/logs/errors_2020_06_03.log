@@ -1,0 +1,532 @@
+2020-06-03 00:04:40
+User_id: 99025
+Error: E_WARNING
+URL: https://findsingles.online/m/profile_view.php?user_id=99029&from=search&ref=people_nearby&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2518)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\profile_view.php (Line: 132)
+Function: loadPageContentAjax
+
+$_POST = Array
+(
+    [upload_page_content_ajax] => 1
+)
+
+---------
+
+2020-06-03 00:04:43
+User_id: 99025
+Error: E_WARNING
+URL: https://findsingles.online/m/profile_view.php?user_id=99029&from=search&ref=people_nearby&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2518)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\profile_view.php (Line: 132)
+Function: loadPageContentAjax
+
+$_POST = Array
+(
+    [upload_page_content_ajax] => 1
+)
+
+---------
+
+2020-06-03 00:04:47
+User_id: 99025
+Error: E_WARNING
+URL: https://findsingles.online/m/profile_view.php?user_id=99029&from=search&ref=people_nearby&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2518)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\profile_view.php (Line: 132)
+Function: loadPageContentAjax
+
+$_POST = Array
+(
+    [upload_page_content_ajax] => 1
+)
+
+---------
+
+2020-06-03 00:10:19
+User_id: 99025
+Error: E_WARNING
+URL: https://findsingles.online/isabelle_pang
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\search_results.php (Line: 1046)
+Function: include
+
+File: D:\findsingles_online\router.php (Line: 16)
+Function: include
+
+$_POST = Array
+(
+    [ref] => people_nearby
+    [ref_offset] => 1
+)
+
+---------
+
+2020-06-03 00:10:51
+User_id: 99025
+Error: E_WARNING
+URL: https://findsingles.online/isabelle_pang
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\search_results.php (Line: 1046)
+Function: include
+
+File: D:\findsingles_online\router.php (Line: 16)
+Function: include
+
+---------
+
+2020-06-03 01:12:17
+User_id: 99043
+Error: E_WARNING
+URL: https://findsingles.online/bobo_angkasa
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\search_results.php (Line: 1046)
+Function: include
+
+File: D:\findsingles_online\router.php (Line: 16)
+Function: include
+
+---------
+
+2020-06-03 01:44:49
+User_id: 99025
+Error: E_WARNING
+URL: https://findsingles.online/isabelle_pang
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\search_results.php (Line: 1046)
+Function: include
+
+File: D:\findsingles_online\router.php (Line: 16)
+Function: include
+
+$_POST = Array
+(
+    [ref] => people_nearby
+    [ref_offset] => 1
+)
+
+---------
+
+2020-06-03 02:09:28
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/m/moderator.php
+File: D:\findsingles_online\_include\core\x.php
+Line: 562
+Message: Undefined index: moderator_profiles
+
+Call stack:
+
+File: D:\findsingles_online\m\moderator.php (Line: 12)
+Class: Moderator
+Function: checkAccess
+
+---------
+
+2020-06-03 04:38:59
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/m/moderator.php
+File: D:\findsingles_online\_include\core\x.php
+Line: 562
+Message: Undefined index: moderator_profiles
+
+Call stack:
+
+File: D:\findsingles_online\m\moderator.php (Line: 12)
+Class: Moderator
+Function: checkAccess
+
+---------
+
+2020-06-03 04:40:52
+User_id: 99032
+Error: E_WARNING
+URL: https://findsingles.online/m/profile_view.php?user_id=99041&from=search&ref=people_nearby&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\smtp.class.php
+Line: 141
+Message: stream_socket_client(): unable to connect to mail.chameleonintranet.com:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 141)
+Function: stream_socket_client
+
+File: D:\findsingles_online\_include\current\smtp.class.php (Line: 159)
+Class: Smtp
+Function: connect
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 113)
+Class: Smtp
+Function: send
+
+File: D:\findsingles_online\_include\lib\mail.php (Line: 68)
+Function: send_mail_smtp
+
+File: D:\findsingles_online\_include\current\common.class.php (Line: 402)
+Function: send_mail
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1744)
+Class: Common
+Function: sendAutomail
+
+File: D:\findsingles_online\_include\lib\list.php (Line: 261)
+Class: CUsersProfile
+Function: onItem
+
+File: D:\findsingles_online\_include\current\users.php (Line: 1105)
+Class: CHtmlList
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CUsers
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2518)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\profile_view.php (Line: 132)
+Function: loadPageContentAjax
+
+$_POST = Array
+(
+    [upload_page_content_ajax] => 1
+)
+
+---------
+

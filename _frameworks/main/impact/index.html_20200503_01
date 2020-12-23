@@ -1,0 +1,93 @@
+{header}
+    <div class="bl_join_done">
+        <div class="slogan">{l_join_the_best_dating_site_in_the_world} </div>
+   
+    <div class="bl_title var info_block">
+
+        <div class="title_icon">
+           
+               <h1>
+             
+                {l_meet_new_people_in} <a href="{url_main}{url_page_search_results}?{type_location}={ip_city_id}{params}">{response.country}</a>!
+       
+                {main_page_title_location_image}
+           
+           </h1>
+            <span>{l_chat_with_fun_new_people_share_photos_and_interests_even_date}</span>
+        </div>
+      
+    </div>
+<script>
+
+function ipLookUp () {
+  $.ajax('http://ip-api.com/json')
+  .then(
+      function success(response) {
+          console.log('User\'s Location Data is ', response);
+          console.log('User\'s Country', response.country);
+      },
+
+      function fail(data, status) {
+          console.log('Request failed.  Returned status of',
+                      status);
+      }
+  );
+}
+ipLookUp()
+</script>
+
+
+
+ 
+        <form id="frm_join_index_step_1" action="{url_main}{url_page_join}" method="POST">
+            <div class="bl_form bl_form_index">
+                <!-- begin_title_join -->
+                <label>{l_i_am}</label>
+                <!-- end_title_join -->
+                <!-- begin_field_sexuality -->
+                <div class="bl_select">
+                <select name="p_sexuality" class="select_main select_index">
+                {options_sexuality}
+                </select>
+                </div>
+                <!-- end_field_sexuality -->
+                <!-- begin_field_orientation -->
+                <div class="bl_select">
+                    <select id="bl_join_done_orientation" name="orientation" class="select_main select_index">
+                    {options_orientation}
+                    </select>
+                    <div id="orientation_error" class="error to_hide">{l_orientation_is_required}</div>
+                </div>
+                <!-- end_field_orientation -->
+                <button type="submit" class="btn pink">{l_continue}</button>
+                <script>if(!$('.select_index')[0])$jq('.bl_form_index').addClass('show');</script>
+            </div>
+        </form>
+        <script>
+
+        $('.select_main','.bl_form_index').styler({
+            selectAutoWidth : false,
+            selectAppearsNativeToIOS: false,
+            selectAnimation: true
+
+        });
+        $jq('#bl_join_done_orientation').styler({
+            onSelectOpened:function(){
+                $('#orientation_error').addClass('to_hide');
+            }
+        })
+        $('#frm_join_index_step_1').submit(function(){
+            var $frm=$(this),isError=false;
+            $('select',$frm).each(function(){
+                if(!this.value || this.value == 0){
+                    isError=true;
+                    $('#'+this.name+'_error').removeClass('to_hide');
+                }
+            })
+            if(isError){
+                return false;
+            }
+        })
+        </script>
+    </div>
+{footer}

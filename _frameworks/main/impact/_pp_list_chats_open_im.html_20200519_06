@@ -1,0 +1,134 @@
+<!-- begin_open_im -->
+<!-- begin_open_im_js -->
+<script>imChats.updateCounter({open_im_all_new_msg_count});</script>
+<!-- end_open_im_js -->
+<div id="im_open_{user_to_id}" data-user-name="{user_to_name}" data-user-photo="{user_to_photo}" data-uid="{user_to_id}" data-user-age="{user_to_age}" data-user-profile-url="{user_to_profile_link}" class="list_chats_item open_im_chat <!-- begin_open_im_show -->to_show<!-- end_open_im_show -->">
+    <div id="im_open_chat_{user_to_id}" class="chat open {open_im_active}" style="opacity:1;">
+        <div class="head" onclick="imChats.openIm('{user_to_id}', event);">
+            <a><span class="marker"></span><span id="im_open_title_{user_to_id}" data-user-name="{user_to_name}" data-new-msg-count="{open_im_new_msg_count}" class="head_title">{open_im_title}</span></a>
+            <span class="icon_close" onclick="imChats.closeOneIm('{user_to_id}'); return false;">
+                <span class="icon_close_pp_chat im_close"></span>
+                <span class="icon_close_pp_chat_hover im_close"></span>
+            </span>
+        </div>
+        <div id="im_cont_{user_to_id}" class="cont">
+            <div id="im_scrollbar_{user_to_id}" class="scrollbarY">
+                <div class="scrollbar"><div class="track"><div id="im_thumb_{user_to_id}" class="thumb im_trans_{user_to_id}"></div></div></div>
+                <div id="im_viewport_{user_to_id}" class="viewport">
+                    <div id="im_overview_{user_to_id}" class="overview im_trans_{user_to_id}">
+                    <div class="item">
+                        <div id="im_open_list_msg_{user_to_id}" class="message">
+                            {list_chats_im_msg}
+                            <script>imChats.initOneIm('{user_to_id}', '{first_msg_id}');</script>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot" style="display:flex;">
+            <button class="emoji-button-user" style="background: none;border: 1px solid #c4c4c6;border-radius: 50px;width: 33px;height: 30px;margin-left: 5px;margin-top: 5px;color: #9f9f9f;"><i class="fa fa-smile-o" aria-hidden="true" style="font-size: 24px;"></i></button>
+            <textarea data-uid="{user_to_id}" type="text" id="im_open_msg_send_{user_to_id}" class="placeholder" placeholder="{a_enter_your_message}"></textarea>
+            <div id="pp_message_upload_img_{user_to_id}" title="{a_upload_image}" class="pp_message_upload_img disabled" onclick="imChats.clearUploadImage('{user_to_id}', true, true);">
+                <div id="pp_message_upload_img_loader_{user_to_id}" class="pp_message_upload_img_loader"></div>
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <span class="count_upload_image"><i class="fa fa-check"></i></span>
+                <form id="pp_message_upload_img_frm_{user_to_id}" method="post" enctype="multipart/form-data" action="" onsubmit="return false;">
+                    <input class="pp_message_upload_img_input_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" name="file_add_wall"  onclick="imChats.clickUpload($(this));" onChange="imChats.changeUploadImage($(this));"/>
+                    <input class="inp_hide" type="reset" value=""/>
+                    <input class="inp_hide" type="submit" value=""/>
+                </form>
+                <script>imChats.initAddImage({user_to_id});</script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end_open_im -->
+<script>
+$(document).ready(function() {
+    var emoji_btn;
+     const picker = new EmojiButton();
+    $('body').on('click', 'button.emoji-button-user', function(){
+        emoji_btn = $(this);
+        picker.pickerVisible ? picker.hidePicker() : picker.showPicker($(this));
+    $('.emoji-picker').prepend('<button class="emoji-btn active"><i class="fa fa-smile-o" aria-hidden="true" style="font-size: 30px; color: #4778cd; margin-left: 2px;"></i></button><button class="gif-btn"><i class="fa fa-image" aria-hidden="true" style="font-size: 30px; color: #4778cd; margin-left: 2px;"></i></button>');
+    $('.emoji-picker').append('<div class="gif-picker__search-container" style="display: none;"><input class="gif-picker__search" placeholder="Search"><span class="gif-picker__search-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></span></div>');
+    $('.emoji-picker').append('<div class="gif-picker__content" style="display: none;"></div>');
+	q = "hola"; // search query
+	request = new XMLHttpRequest;
+	request.open('GET', 'https://api.giphy.com/v1/gifs/search?q='+q.replace(/\s/g, '+')+'&api_key=jUJssqJVZW9XEodTtnD0pEYcycgOrgyo', true);
+	
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data;
+                        var i;
+                        for(i=0; i<data.length; i++){
+                             $('.gif-picker__content').append('<li><img src='+data[i].images.downsized.url+'></li>');
+                        }
+
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+	console.log(window.giphyRandomId);
+	request.onerror = function() {
+		console.log('connection error');
+	};
+  request.send();
+  $('.emoji-picker').on('keydown','.gif-picker__search',  function(event){ 
+    if(event.which == 13){
+        $('.gif-picker__content li').remove();
+        q = $(this).val();
+        request = new XMLHttpRequest;
+	request.open('GET', 'https://api.giphy.com/v1/gifs/search?q='+q.replace(/\s/g, '+')+'&api_key=jUJssqJVZW9XEodTtnD0pEYcycgOrgyo', true);
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data;
+                        var i;
+                        for(i=0; i<data.length; i++){
+                             $('.gif-picker__content').append('<li><img src='+data[i].images.downsized.url+'></li>');
+                        }
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+	console.log(window.giphyRandomId);
+	request.onerror = function() {
+		console.log('connection error');
+	};
+	request.send();
+    }
+ });
+ $('.emoji-picker').on('click','.gif-picker__content img',  function(){ 
+   temp = $(this).attr('src').split('?');
+    var text  = emoji_btn.parent().find('textarea').val()+temp[0].substring(6);
+    emoji_btn.parent().find('textarea').val(text);
+ });
+ $('.emoji-picker').on('click','.emoji-btn',  function(){
+    $(this).removeClass('active');
+    $(this).addClass('active');
+    $('.emoji-picker .gif-btn').removeClass('active');
+    $('.emoji-picker__search-container').css('display', 'block');
+    $('.emoji-picker__content').css('display', 'block');
+    $('.gif-picker__search-container').css('display', 'none');
+    $('.gif-picker__content').css('display', 'none');
+  });
+  $('.emoji-picker').on('click','.gif-btn',  function(){
+    $(this).removeClass('active');
+    $(this).addClass('active');
+    $('.emoji-picker .emoji-btn').removeClass('active');
+    $('.emoji-picker__search-container').css('display', 'none');
+    $('.emoji-picker__content').css('display', 'none');
+
+    $('.gif-picker__search-container').css('display', 'block');
+    $('.gif-picker__content').css('display', 'block');
+     });
+  });
+    
+  picker.on('emoji', emoji => {
+    var text  = emoji_btn.parent().find('textarea').val()+emoji;
+    emoji_btn.parent().find('textarea').val(text);
+    throw('');
+  });
+});
+</script>

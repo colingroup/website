@@ -1,0 +1,278 @@
+{header}
+<script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+
+<script>
+    messages.setLastId('{last_id}');
+    messages.initOneChat('{user_to}', '{limit_start}', '{is_one_chat}', '{user_to_photo}', '{first_msg_id}');
+    messages.usersCacheAdd('{user_to_id}');
+</script>
+<style>
+.emoji-btn{
+   border: none;
+    width: 50%;
+    height: 35px;
+}
+.emoji-btn.active{
+   border: none;
+    width: 50%;
+    height: 35px;
+    background: white;
+}
+.gif-btn{
+   border: none;
+    width: 50%;
+    height: 35px;
+}
+.gif-btn.active{
+   border: none;
+    width: 50%;
+    height: 35px;
+    background: white;
+}
+.gif-picker__search-container {
+    margin: 0.5em;
+    position: relative;
+    height: 2em;
+    display: flex;
+}
+.gif-picker__search-container input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    padding-right: 2em;
+}
+.gif-picker__search-icon {
+    position: absolute;
+    color: #CCCCCC;
+    width: 1em;
+    height: 1em;
+    right: 0.75em;
+    top: calc(50% - 0.5em);
+}
+.gif-picker__content {
+    padding: 0.5em;
+    height: 23.5rem;
+overflow:auto;
+}
+.gif-picker__content li{
+list-style: none;
+    margin-bottom: 10px;
+}
+.gif-loader{
+width:190px; 
+padding:28px 0; 
+background:url("{url_tmpl_main}images/loader.gif") 50% 22px no-repeat transparent;
+}
+.gif-picker__content img{
+width:100%;
+border-radius: 10px;
+    cursor: pointer;
+}
+.gif-picker__content img:hover{
+opacity:0.6;
+}
+.pp_message_emoji {
+    width: 32px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 64px;
+    right: 22px;
+    height: 32px;
+    cursor: pointer;
+    background-size: contain;
+}
+.emoji-picker {
+    margin-left: 38px !important;
+    z-index: 999;
+    height: 30rem;
+}
+.emoji-picker::after{
+display: inline-block;
+    margin-left: -0.4em;
+    margin-top: -4em;
+    vertical-align: .255em;
+    margin-bottom: 2em;
+    content: "";
+    color: white;
+    border-right: .5em solid;
+    border-bottom: .5em solid transparent;
+border-top: .5em solid transparent;
+}
+</style>
+<div class="col_center">
+	<div class="head icon_head_messages head_line">
+        <a href="" onclick="goLink('{url_main}{url_profile}', 'ref=one_chat'); return false;">{user_to_name}</a>
+        <span class="icon_message_back" onclick="redirectUrl('{url_main}{url_page_messages}')">
+            <span class="back"></span>
+            <span class="back_hover"></span>
+        </span>
+    </div>
+    <div id="bl_cont" class="cont" style="opacity:0;">
+        <div class="scrollbarY message_chat_scroll">
+            <div class="scrollbar"><div class="track"><div id="scrollbarY_thumb" class="thumb animate"></div></div></div>
+            <div id="bl_viewport" class="viewport">
+                <div id="bl_overview" class="overview">
+                    <div class="message_chat">
+                        <div id="chat_cont" class="chat_cont">
+                            <div id="more_load_cont_im" class="css_loader more_load_cont_im">
+                                <div class="spinner center">
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                </div>
+                            </div>
+                            <div id="msg_profile_pic" class="msg_profile_pic <!-- begin_one_chat_profile_pic_hide -->hide<!-- end_one_chat_profile_pic_hide -->">
+                                <div class="profile_pic">
+                                    <button <!-- begin_messages_users_list_item_plug_private_photos -->class="plug_private_photos"<!-- end_messages_users_list_item_plug_private_photos --> onclick="goLink('{url_main}{url_profile}', 'ref=one_chat'); return false;" style="background-image: url({url_files}{user_to_photo});" title=""></button>
+                                </div>
+
+                            </div>
+                            {users_list}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message_field_chat">
+            <textarea id="msg_text" class="placeholder" placeholder="{a_enter_your_message}"></textarea>
+            <div id="pp_message_upload_img" title="{a_upload_image}" class="pp_message_upload_img disabled" onclick="messages.clearUploadImage(true, true);">
+                <div id="pp_message_upload_img_loader" class="pp_message_upload_img_loader"></div>
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <span class="count_upload_image">1</span>
+                <form id="pp_message_upload_img_frm" method="post" enctype="multipart/form-data" action="" onsubmit="return false;">
+                    <input class="pp_message_upload_img_input_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" name="file_add_wall"  onclick="messages.clickUpload($(this));" onChange="messages.changeUploadImage($(this));"/>
+                    <input class="inp_hide" type="reset" value=""/>
+                    <input class="inp_hide" type="submit" value=""/>
+                </form>
+                <script>messages.initAddImage();</script>
+            </div>
+            <div class="pp_message_emoji" >
+               <button id="emoji-button" style="border:none; background:none;"><i class="fa fa-smile-o" aria-hidden="true" style="font-size: 22px; color: #817f7f; margin-left: 2px;"></i></button>
+            </div>
+        </div>
+        <div class="cl"></div>
+	</div>
+</div>
+<div style="display:none;">
+	<div id="template_msg" class="im_msg_one" data-send="{message_send}" data-id="" data-msg-user-id="" data-to-user-id="" data-sp="">
+		<div class="item answer">
+			<div class="data">
+				<span class="date_msg" style="opacity:0;">&nbsp;</span>
+				<div class="msg_read hide"></div>
+				<div class="upgrade_msg hide">{l_upgrade_to_see_if_read}</div>
+			</div>
+			<div class="msg">
+				<div class="info"></div>
+				<div class="pic" onclick="redirectUrl('{url_main}{message_user_profile_link}')">
+					<button title="" style="background-image: url({url_files}{current_user_photo});"></button>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+{footer}
+
+<script>
+
+window.addEventListener('DOMContentLoaded', () => {
+  const button = document.querySelector('#emoji-button');
+  const picker = new EmojiButton();
+
+  picker.on('emoji', function (emoji){
+var text =  document.getElementById('msg_text').value;
+text = text + emoji;
+document.getElementById('msg_text').value = text;
+throw('');
+  });
+  button.addEventListener('click', () => {
+    picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
+    $('.emoji-picker').prepend('<button class="emoji-btn active"><i class="fa fa-smile-o" aria-hidden="true" style="font-size: 30px; color: #4778cd; margin-left: 2px;"></i></button><button class="gif-btn"><i class="fa fa-image" aria-hidden="true" style="font-size: 30px; color: #4778cd; margin-left: 2px;"></i></button>');
+    $('.emoji-picker').append('<div class="gif-picker__search-container" style="display: none;"><input class="gif-picker__search" placeholder="Search"><span class="gif-picker__search-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></span></div>');
+    $('.emoji-picker').append('<div class="gif-picker__content" style="display: none;"></div>');
+	q = "hola"; // search query
+	request = new XMLHttpRequest;
+	request.open('GET', 'https://api.giphy.com/v1/gifs/search?q='+q.replace(/\s/g, '+')+'&api_key=jUJssqJVZW9XEodTtnD0pEYcycgOrgyo', true);
+	
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data;
+                        var i;
+                        for(i=0; i<data.length; i++){
+                             $('.gif-picker__content').append('<li><img src='+data[i].images.downsized.url+'></li>');
+                        }
+
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+	console.log(window.giphyRandomId);
+	request.onerror = function() {
+		console.log('connection error');
+	};
+	request.send();
+  $('.emoji-picker').on('keydown','.gif-picker__search',  function(event){ 
+    if(event.which == 13){
+        $('.gif-picker__content li').remove();
+        q = $(this).val();
+        request = new XMLHttpRequest;
+	request.open('GET', 'https://api.giphy.com/v1/gifs/search?q='+q.replace(/\s/g, '+')+'&api_key=jUJssqJVZW9XEodTtnD0pEYcycgOrgyo', true);
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data;
+                        var i;
+                        for(i=0; i<data.length; i++){
+                             $('.gif-picker__content').append('<li><img src='+data[i].images.downsized.url+'></li>');
+                        }
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+	console.log(window.giphyRandomId);
+	request.onerror = function() {
+		console.log('connection error');
+	};
+	request.send();
+    }
+ });
+ $('.emoji-picker').on('click','.gif-picker__content img',  function(){ 
+alert($(this).attr('src'));
+
+});
+ $('.emoji-picker').on('click','.emoji-btn',  function(){
+    $(this).removeClass('active');
+    $(this).addClass('active');
+    $('.emoji-picker .gif-btn').removeClass('active');
+    $('.emoji-picker__search-container').css('display', 'block');
+    $('.emoji-picker__content').css('display', 'block');
+    $('.emoji-picker__preview').css('display', 'flex');
+    $('.gif-picker__search-container').css('display', 'none');
+    $('.gif-picker__content').css('display', 'none');
+  });
+  $('.emoji-picker').on('click','.gif-btn',  function(){
+    $(this).removeClass('active');
+    $(this).addClass('active');
+    $('.emoji-picker .emoji-btn').removeClass('active');
+    $('.emoji-picker__search-container').css('display', 'none');
+    $('.emoji-picker__content').css('display', 'none');
+    $('.emoji-picker__preview').css('display', 'none');
+    $('.gif-picker__search-container').css('display', 'block');
+    $('.gif-picker__content').css('display', 'block');
+     });
+  });
+});
+
+</script>

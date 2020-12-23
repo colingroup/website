@@ -1,0 +1,51 @@
+2020-08-02 01:16:43
+User_id: 99032
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 161)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 825)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 1
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 1
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+

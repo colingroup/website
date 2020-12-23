@@ -1,0 +1,32 @@
+2020-06-01 18:03:52
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/m/moderator.php
+File: D:\findsingles_online\_include\core\x.php
+Line: 562
+Message: Undefined index: moderator_profiles
+
+Call stack:
+
+File: D:\findsingles_online\m\moderator.php (Line: 12)
+Class: Moderator
+Function: checkAccess
+
+---------
+
+2020-06-01 18:04:03
+User_id: 0
+Error: E_NOTICE
+URL: https://findsingles.online/m/moderator.php
+File: D:\findsingles_online\_include\core\x.php
+Line: 562
+Message: Undefined index: moderator_profiles
+
+Call stack:
+
+File: D:\findsingles_online\m\moderator.php (Line: 12)
+Class: Moderator
+Function: checkAccess
+
+---------
+

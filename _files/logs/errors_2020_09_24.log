@@ -1,0 +1,73 @@
+2020-09-24 04:27:14
+User_id: 0
+Error: E_ERROR
+URL: https://findsingles.online/m/
+File: D:\findsingles_online\_include\current\social.class.php
+Line: 93
+Message: Uncaught Error: Class 'vk' not found in D:\findsingles_online\_include\current\social.class.php:93
+Stack trace:
+#0 D:\findsingles_online\m\_include\core\pony_start.php(25): Social::init()
+#1 D:\findsingles_online\m\index.php(10): include('D:\\findsingles_...')
+#2 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-09-24 09:56:43
+User_id: 0
+Error: E_PARSE
+URL: https://findsingles.online/m/join_facebook.php?cmd=vk_login
+File: D:\findsingles_online\_include\current\social.class.php
+Line: 231
+Message: syntax error, unexpected 'echo' (T_ECHO)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-09-24 10:33:41
+User_id: 0
+Error: E_WARNING
+URL: https://findsingles.online/administration/users_edit.php?
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 753
+Message: array_merge(): Argument #1 is not an array
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\user.class.php (Line: 753)
+Function: array_merge
+
+File: D:\findsingles_online\administration\users_edit.php (Line: 15)
+Class: User
+Function: getInfoFull
+
+---------
+
+2020-09-24 10:33:47
+User_id: 0
+Error: E_WARNING
+URL: https://findsingles.online/administration/users_edit.php?
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 753
+Message: array_merge(): Argument #1 is not an array
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\user.class.php (Line: 753)
+Function: array_merge
+
+File: D:\findsingles_online\administration\users_edit.php (Line: 15)
+Class: User
+Function: getInfoFull
+
+---------
+

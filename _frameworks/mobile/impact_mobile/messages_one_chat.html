@@ -1,0 +1,252 @@
+{header}
+<script type="text/javascript" src="../_server/jquery/jquery.autosize.js{cache_version_param}"></script>
+<script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+<script id="script_replace_page">
+    urlPageHistory='{url_page_messages}{url_get_params}';
+</script>
+<style>
+.emoji-picker {
+margin-top: -425px !important;
+margin-left: -35px !important;
+border:none !important;
+box-shadow:none;
+width: 20.5rem;
+height: 27.5rem;
+/* width: calc(100% - 107px) !important; */
+background: #142d69;
+border-radius: 5px 5px 0px 0px;
+z-index: 999;
+}
+.emoji-picker__preview{
+display:none;
+}
+.emoji-picker__tab-body h2{
+color:white;
+}
+.emoji-btn{
+    margin-bottom: 3px;
+   border-radius: 5px 0px 0px;
+   border: none;
+    width: 50%;
+    height: 35px;
+    background: #142d69;    
+}
+.gif-item{
+    height: 70px;
+    border-radius: 7px;
+}
+.emoji-btn.active i{
+color: #4f81e5 !important;
+border-bottom:2px solid #4f81e5;
+}
+.gif-btn{
+    margin-bottom: 3px;
+   border: none;
+    width: 50%;
+    height: 35px;
+    background: #142d69;    
+   border-radius: 0px 5px 0px 0px;
+}
+.gif-btn.active i{
+color: #4f81e5 !important;
+border-bottom:2px solid #4f81e5;
+}
+.gif-picker__search-container {
+    margin: 0.5em;
+    margin-bottom: 0rem;
+    position: relative;
+    height: 2em;
+    display: flex;
+}
+.gif-picker__search-container input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    padding-right: 2em;
+}
+.gif-picker__search-icon {
+    position: absolute;
+    color: #CCCCCC;
+    width: 1em;
+    height: 1em;
+    right: 0.75em;
+    top: calc(50% - 0.5em);
+}
+.gif-picker__content {
+    padding: 0.5em;
+    height: 20.5rem;
+overflow:auto;
+}
+.gif-picker__content li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.gif-loader{
+width:190px; 
+padding:28px 0; 
+background:url("{url_tmpl_main}images/loader.gif") 50% 22px no-repeat transparent;
+}
+.gif-picker__content img{
+width:100%;
+border-radius: 10px;
+    cursor: pointer;
+}
+.gif-picker__content img:hover{
+opacity:0.6;
+}
+</style>
+<script>messages.clearCacheAll();</script>
+<style id="message_custom_style"></style>
+<script>messages.prepareStyle();</script>
+<div class="message_chat">
+    <div id="message_cont" class="message_cont message_one_cont">
+        <div id="loader_box_msg" class="css_loader loader_one_chat">
+            <div class="spinner spinnerw center">
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            </div>
+        </div>
+        <div id="one_chat_profile_pic" class="msg_profile_pic go_to_page  <!-- begin_one_chat_profile_pic_hide -->hide<!-- end_one_chat_profile_pic_hide -->" data-cl-loader="loader_one_chat_to_profile" data-type-loader="fade_btn" data-url="{url_main}{url_page_profile_view}?user_id={user_to_id}">
+            <button <!-- begin_messages_users_list_item_plug_private_photos -->class="plug_private_photos"<!-- end_messages_users_list_item_plug_private_photos --> style="background-image: url({url_files}{user_to_photo});" title=""></button>
+        </div>
+        <div id="messages_box" class="messages_box">
+        {users_list}
+        </div>
+    </div>
+    <div id="message_field_chat" class="message_field_chat">
+        <!-- begin_btn_invite_videochat -->
+        <div class="btn_audio_video">
+            <button data-cl-loader="loader_media_chat" class="btn large audio_chat" onclick="audioChat.checkInvite($(this))"></button>
+        </div>
+        <!-- end_btn_invite_videochat -->
+        <!-- begin_btn_invite_audiochat -->
+        <div class="btn_audio_video">
+            <button data-cl-loader="loader_media_chat" class="btn large video_chat" onclick="videoChat.checkInvite($(this))"></button>
+        </div>
+        <!-- end_btn_invite_audiochat -->
+        <div id="field_send" class="field_send disabled">
+<button id="m-emoji-button" style="background: none;border: none;margin-left: 5px;margin-top: 10px;color: #254c8e; position:absolute;"><i class="fa fa-smile-o" aria-hidden="true" style="font-size: 24px;"></i></button>
+            <textarea id="message_text" class="placeholder" placeholder="{a_enter_your_message}" style="padding-left: 32px;"></textarea>
+            <div id="pp_message_upload_img" title="{a_upload_image}" class="btn large send btn_upload_img" onclick="messages.clearUploadImage(true, true);">
+                <div id="pp_message_upload_img_loader" class="pp_message_upload_img_loader"></div>
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <form id="pp_message_upload_img_frm" method="post" enctype="multipart/form-data" action="" onsubmit="return false;">
+                    <input class="pp_message_upload_img_input_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" name="file_add_wall"  onclick="messages.clickUpload($(this));" onChange="messages.changeUploadImage($(this));"/>
+                    <input class="inp_hide" type="reset" value=""/>
+                    <input class="inp_hide" type="submit" value=""/>
+                </form>                
+                <script>messages.initAddImage();</script>
+            </div>
+            <span class="count_upload_image">1</span>
+            <button id="message_btn_send" onclick="messages.send();" class="btn large send"></button>
+        </div>
+    </div>
+</div>
+<script>
+  var button = document.querySelector('#m-emoji-button');
+  var picker = new EmojiButton();
+  picker.on('emoji', emoji => {
+    var text =  document.getElementById('message_text').value;
+    text = text + emoji;
+    document.getElementById('message_text').value = text;
+    throw('');
+  });
+
+  button.addEventListener('click', () => {
+    picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
+    $('.emoji-picker__search').attr('readonly','readonly');
+    $('.emoji-picker__search').on('click', function(){$(this).removeAttr('readonly');});
+    $('.emoji-picker').prepend('<button class="emoji-btn active"><i class="fa fa-smile-o" aria-hidden="true" style="font-size: 30px; color: white; margin-left: 2px;"></i></button><button class="gif-btn"><i class="fa fa-image" aria-hidden="true" style="font-size: 30px; color: white; margin-left: 2px;"></i></button>');
+    $('.emoji-picker').append('<div class="gif-picker__search-container" style="display: none;"><input class="gif-picker__search" placeholder="Search"><span class="gif-picker__search-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></span></div>');
+    $('.emoji-picker').append('<div class="gif-picker__content" style="display: none;"></div>');
+	q = "hola"; // search query
+	request = new XMLHttpRequest;
+	request.open('GET', 'https://api.giphy.com/v1/gifs/search?q='+q.replace(/\s/g, '+')+'&api_key=jUJssqJVZW9XEodTtnD0pEYcycgOrgyo', true);
+	
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data;
+                        var i;
+                        for(i=0; i<data.length; i++){
+                             $('.gif-picker__content').append('<li><img src='+data[i].images.downsized.url+'></li>');
+                        }
+
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+	console.log(window.giphyRandomId);
+	request.onerror = function() {
+		console.log('connection error');
+	};
+  request.send();
+  $('.emoji-picker').on('keydown','.gif-picker__search',  function(event){ 
+    if(event.which == 13){
+        $('.gif-picker__content li').remove();
+        q = $(this).val();
+        request = new XMLHttpRequest;
+	request.open('GET', 'https://api.giphy.com/v1/gifs/search?q='+q.replace(/\s/g, '+')+'&api_key=jUJssqJVZW9XEodTtnD0pEYcycgOrgyo', true);
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data;
+                        var i;
+                        for(i=0; i<data.length; i++){
+                             $('.gif-picker__content').append('<li><img src='+data[i].images.downsized.url+'></li>');
+                        }
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+	console.log(window.giphyRandomId);
+	request.onerror = function() {
+		console.log('connection error');
+	};
+	request.send();
+    }
+ });
+ $('.emoji-picker').on('click','.gif-picker__content img',  function(){ 
+  temp = $(this).attr('src').split('?');
+   msg_text_value = document.getElementById('message_text').value;
+   document.getElementById('message_text').value = temp[0].substring(6);
+   messages.send();
+   document.getElementById('message_text').value = msg_text_value;
+ });
+ $('.emoji-picker').on('click','.emoji-btn',  function(){
+    $(this).removeClass('active');
+    $(this).addClass('active');
+    $('.emoji-picker .gif-btn').removeClass('active');
+    $('.emoji-picker__search-container').css('display', 'flex');
+    $('.emoji-picker__content').css('display', 'block');
+    $('.gif-picker__search-container').css('display', 'none');
+    $('.gif-picker__content').css('display', 'none');
+  });
+  $('.emoji-picker').on('click','.gif-btn',  function(){
+    $(this).removeClass('active');
+    $(this).addClass('active');
+    $('.emoji-picker .emoji-btn').removeClass('active');
+    $('.emoji-picker__search-container').css('display', 'none');
+    $('.emoji-picker__content').css('display', 'none');
+    $('.gif-picker__search-container').css('display', 'flex');
+    $('.gif-picker__content').css('display', 'block');
+     });
+  });
+
+    messages.setData({
+        imHistoryMessages : '{im_history_messages}'*1,
+    });
+    messages.setLastId('{last_id}');
+    messages.initOneChat('{user_to}', '{current_user_photo}', '{current_user_name}', '{limit_start}', '{first_msg_id}', '{user_to_photo}', '{user_to_name}', '{url_page_profile_view}');
+    updateMenuCounterAll({set_messages_counter});
+</script>
+{footer}

@@ -1,0 +1,361 @@
+2020-08-07 03:36:08
+User_id: 99062
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: 
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 90)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => Hi
+    [send] => 1596742568431
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-08-07 03:36:55
+User_id: 99062
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/messages.php?cmd=send_message&display=one_chat&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\pushnotification.class.php
+Line: 59
+Message: 
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 59)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\current\pushnotification.class.php (Line: 90)
+Class: PushNotification
+Function: send
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 1729)
+Class: PushNotification
+Function: sendIm
+
+File: D:\findsingles_online\_include\current\cim.class.php (Line: 3625)
+Class: CIm
+Function: addMessage
+
+File: D:\findsingles_online\m\messages.php (Line: 94)
+Class: CIm
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 283)
+Class: CMessages
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\messages.php (Line: 138)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [ajax] => 1
+    [user_to] => 99029
+    [msg] => Hi
+    [send] => 1596742608212
+    [to_delete] => 0
+    [image_upload] => 0
+    [ind] => 0
+)
+
+---------
+
+2020-08-07 14:54:40
+User_id: 99062
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 3
+    [p_orientation] => Array
+        (
+            [0] => 2
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 1
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+
+2020-08-07 15:03:30
+User_id: 99032
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 1
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 1
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+
+2020-08-07 15:03:49
+User_id: 99032
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 1
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 1
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+
+2020-08-07 15:05:21
+User_id: 99032
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 1
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 1
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+
+2020-08-07 15:27:29
+User_id: 99032
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 1
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 1
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+

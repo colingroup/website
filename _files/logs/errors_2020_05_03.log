@@ -1,0 +1,110 @@
+2020-05-03 03:05:40
+User_id: 0
+Error: E_WARNING
+URL: http://www.findsingles.online/administration/city_logo.php?&set_template_administration_runtime=default&site_part_runtime=administration
+File: D:\findsingles_online\_include\current\common_admin.php
+Line: 2677
+Message: Division by zero
+
+Call stack:
+
+File: D:\findsingles_online\_include\current\common_admin.php (Line: 2534)
+Class: CAdminOptions
+Function: actionLogo
+
+File: D:\findsingles_online\administration\city_logo.php (Line: 43)
+Class: CAdminOptions
+Function: action
+
+File: D:\findsingles_online\_include\core\main_close.php (Line: 16)
+Class: CAdminCityLogo
+Function: action
+
+File: D:\findsingles_online\_include\core\administration_close.php (Line: 10)
+Function: include
+
+File: D:\findsingles_online\administration\city_logo.php (Line: 64)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_logo_location_11
+    [block] => logo_location_11
+    [logo_location_11_width] => 203
+    [logo_location_11_height] => 82
+    [logo_location_11_mobile_width] => 43
+)
+
+$_FILES = Array
+(
+    [logo] => Array
+        (
+            [name] => maps-and-flags.svg
+            [type] => image/svg+xml
+            [tmp_name] => C:\server\tmp\findsingles.online\php27F3.tmp
+            [error] => 0
+            [size] => 912
+        )
+
+)
+
+---------
+
+2020-05-03 16:47:43
+User_id: 0
+Error: E_WARNING
+URL: https://www.findsingles.online/
+File: D:\findsingles_online\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'findsingles_onli'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\findsingles_online\_include\core\start.php (Line: 376)
+Class: DB_Common
+Function: connect
+
+File: D:\findsingles_online\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\findsingles_online\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-05-03 16:47:44
+User_id: 0
+Error: E_WARNING
+URL: https://www.findsingles.online/favicon.ico
+File: D:\findsingles_online\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'findsingles_onli'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\findsingles_online\_include\core\start.php (Line: 376)
+Class: DB_Common
+Function: connect
+
+File: D:\findsingles_online\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\findsingles_online\router.php (Line: 9)
+Function: include
+
+---------
+

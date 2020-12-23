@@ -1,0 +1,354 @@
+2020-10-01 03:55:21
+User_id: 0
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/join.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Illegal mix of collations (utf8_unicode_ci,IMPLICIT) and (utf8mb4_unicode_ci,COERCIBLE) for operation '='
+SELECT `user_id` FROM `user` WHERE `name` = 'Malk🥑'
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 524)
+Class: DB_Common
+Function: query
+
+File: D:\findsingles_online\_include\current\user.class.php (Line: 2365)
+Class: DB_Common
+Function: result
+
+File: D:\findsingles_online\_include\current\cjoinform.class.php (Line: 58)
+Class: User
+Function: validateName
+
+File: D:\findsingles_online\m\join.php (Line: 48)
+Class: CJoinForm
+Function: init
+
+$_POST = Array
+(
+    [recaptcha] => 03AGdBq2761s5O8yuxfBN9Z-6Q-bjvVkND3oyvsehxrMeoYEk45gd_JJOYWn0dsTBFWHz5dytFrwTScQThIxXfEahLTUP3BeB5hWaYNAxJrBCxrvk9Qad0z1YORnIfIGM61MDmHlyRPGATWfmawKQRQFT9rPRetYbQpWNCaum8ZtPCw7jlgW6Irh94pAItVPORuyJrGJJlXaARbd7IFrN65zIauQcl9fswQAe8S6r_2eYGwKgl3wcMkbyKyd_z9UrAabdKELRlDJ83ZZ-wf0Fzh5pr8_ex5jFkVyzkIEn0ZNctWxKX_WR7IC-kTxcvDeK4PGHIyiv97hQY9xv12UI3f8jzSDB1jZ23PZGhvUurITySJLO7_o4hyaLkBpHy22ckS0EX7TGGNH_gKO-baapoDv1msswOJGJ3WzASiH2p7dH4A9vFbqWDWpqJUg2HWJmZOSOk3uYMDX8XIVePvKBJquPnOGli766L6Q
+    [cmd] => register
+    [ajax] => 1
+    [email] => oe4095945@gmail.com
+    [join_password] => omar22446688
+    [join_handle] => Malk🥑
+    [day] => 1
+    [month] => 4
+    [year] => 1990
+    [orientation] => 0
+    [country] => 101
+    [state] => 888
+    [city] => 22152
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-10-01 03:55:27
+User_id: 0
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/join.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Illegal mix of collations (utf8_unicode_ci,IMPLICIT) and (utf8mb4_unicode_ci,COERCIBLE) for operation '='
+SELECT `user_id` FROM `user` WHERE `name` = 'Malk🥑'
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 524)
+Class: DB_Common
+Function: query
+
+File: D:\findsingles_online\_include\current\user.class.php (Line: 2365)
+Class: DB_Common
+Function: result
+
+File: D:\findsingles_online\_include\current\cjoinform.class.php (Line: 58)
+Class: User
+Function: validateName
+
+File: D:\findsingles_online\m\join.php (Line: 48)
+Class: CJoinForm
+Function: init
+
+$_POST = Array
+(
+    [recaptcha] => 03AGdBq2761s5O8yuxfBN9Z-6Q-bjvVkND3oyvsehxrMeoYEk45gd_JJOYWn0dsTBFWHz5dytFrwTScQThIxXfEahLTUP3BeB5hWaYNAxJrBCxrvk9Qad0z1YORnIfIGM61MDmHlyRPGATWfmawKQRQFT9rPRetYbQpWNCaum8ZtPCw7jlgW6Irh94pAItVPORuyJrGJJlXaARbd7IFrN65zIauQcl9fswQAe8S6r_2eYGwKgl3wcMkbyKyd_z9UrAabdKELRlDJ83ZZ-wf0Fzh5pr8_ex5jFkVyzkIEn0ZNctWxKX_WR7IC-kTxcvDeK4PGHIyiv97hQY9xv12UI3f8jzSDB1jZ23PZGhvUurITySJLO7_o4hyaLkBpHy22ckS0EX7TGGNH_gKO-baapoDv1msswOJGJ3WzASiH2p7dH4A9vFbqWDWpqJUg2HWJmZOSOk3uYMDX8XIVePvKBJquPnOGli766L6Q
+    [cmd] => register
+    [ajax] => 1
+    [email] => oe4095945@gmail.com
+    [join_password] => omar22446688
+    [join_handle] => Malk🥑
+    [day] => 1
+    [month] => 4
+    [year] => 1990
+    [orientation] => 0
+    [country] => 101
+    [state] => 888
+    [city] => 22152
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-10-01 03:55:52
+User_id: 0
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/join.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Illegal mix of collations (utf8_unicode_ci,IMPLICIT) and (utf8mb4_unicode_ci,COERCIBLE) for operation '='
+SELECT `user_id` FROM `user` WHERE `name` = 'Malk🥑'
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 524)
+Class: DB_Common
+Function: query
+
+File: D:\findsingles_online\_include\current\user.class.php (Line: 2365)
+Class: DB_Common
+Function: result
+
+File: D:\findsingles_online\_include\current\cjoinform.class.php (Line: 58)
+Class: User
+Function: validateName
+
+File: D:\findsingles_online\m\join.php (Line: 48)
+Class: CJoinForm
+Function: init
+
+$_POST = Array
+(
+    [recaptcha] => 03AGdBq27LJZtwsTYAT1AMOiW53fi_nCG3RBNnO5rpTd9haezrxU1nB7DYpQQrCgDp3ipdjG9MtEQcA03_pdSspA1ZlR-sjWMywd_cecHe-Ws2KJ6cxbCYUv9QPmhorCSdSErWBXcAtXdKqCD1l-EqPDMAhFNLJpPdK8pcuLqKZbr0oOUyoD9s-90zFrT518j4Xp-03EEBHJX-_sW0cIBmfyX0YS12zbNaBIPvciRhePQ5SCt-0fs4CCZBhUpryG0Fd6AquPY2Lk_usCOvtaJmrMAWJ8swN61BMw4CxQmGwMP1VUHGyGBX6wW-bCBE30BjeX4dUCP7fAzZI1sF8oeL8ymm_VzaCZnqe_z9sxfHQ09Blr4Z5R9Bt0YxRjWDQn_KiORTWbSasnHhw74TrVUKg8xdgqUjS0fcoC5om6HkCBa-NWbKnLbIoMQfnhFC_VU75_mBEGasyznOP1GFZUGpfkpRZYo5nB_tcA
+    [cmd] => register
+    [ajax] => 1
+    [email] => oe4095945@gmail.com
+    [join_password] => omar22446688
+    [join_handle] => Malk🥑
+    [day] => 1
+    [month] => 4
+    [year] => 1990
+    [orientation] => 0
+    [country] => 101
+    [state] => 888
+    [city] => 22152
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-10-01 03:56:00
+User_id: 0
+Error: E_USER_NOTICE
+URL: https://findsingles.online/m/join.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Illegal mix of collations (utf8_unicode_ci,IMPLICIT) and (utf8mb4_unicode_ci,COERCIBLE) for operation '='
+SELECT `user_id` FROM `user` WHERE `name` = 'Malk🥑'
+
+Call stack:
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\findsingles_online\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\findsingles_online\_include\lib\db_common.php (Line: 524)
+Class: DB_Common
+Function: query
+
+File: D:\findsingles_online\_include\current\user.class.php (Line: 2365)
+Class: DB_Common
+Function: result
+
+File: D:\findsingles_online\_include\current\cjoinform.class.php (Line: 58)
+Class: User
+Function: validateName
+
+File: D:\findsingles_online\m\join.php (Line: 48)
+Class: CJoinForm
+Function: init
+
+$_POST = Array
+(
+    [recaptcha] => 03AGdBq27LJZtwsTYAT1AMOiW53fi_nCG3RBNnO5rpTd9haezrxU1nB7DYpQQrCgDp3ipdjG9MtEQcA03_pdSspA1ZlR-sjWMywd_cecHe-Ws2KJ6cxbCYUv9QPmhorCSdSErWBXcAtXdKqCD1l-EqPDMAhFNLJpPdK8pcuLqKZbr0oOUyoD9s-90zFrT518j4Xp-03EEBHJX-_sW0cIBmfyX0YS12zbNaBIPvciRhePQ5SCt-0fs4CCZBhUpryG0Fd6AquPY2Lk_usCOvtaJmrMAWJ8swN61BMw4CxQmGwMP1VUHGyGBX6wW-bCBE30BjeX4dUCP7fAzZI1sF8oeL8ymm_VzaCZnqe_z9sxfHQ09Blr4Z5R9Bt0YxRjWDQn_KiORTWbSasnHhw74TrVUKg8xdgqUjS0fcoC5om6HkCBa-NWbKnLbIoMQfnhFC_VU75_mBEGasyznOP1GFZUGpfkpRZYo5nB_tcA
+    [cmd] => register
+    [ajax] => 1
+    [email] => oe4095945@gmail.com
+    [join_password] => omar22446688
+    [join_handle] => Malk🥑
+    [day] => 1
+    [month] => 4
+    [year] => 1990
+    [orientation] => 0
+    [country] => 101
+    [state] => 888
+    [city] => 22152
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-10-01 13:35:19
+User_id: 99142
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 2
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 0
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+
+2020-10-01 13:43:14
+User_id: 99143
+Error: E_NOTICE
+URL: https://findsingles.online/m/search_results.php?&set_template_mobile_runtime=impact_mobile&site_part_runtime=mobile
+File: D:\findsingles_online\_include\current\user.class.php
+Line: 4660
+Message: Undefined index: city
+
+Call stack:
+
+File: D:\findsingles_online\m\search_results.php (Line: 164)
+Class: User
+Function: getLocationFiltersMobile
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 294)
+Class: CSearchResults
+Function: parseBlock
+
+File: D:\findsingles_online\_include\lib\block.php (Line: 277)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\_include\lib\lib.php (Line: 2582)
+Class: CHtmlBlock
+Function: parse
+
+File: D:\findsingles_online\m\search_results.php (Line: 844)
+Function: getResponsePageAjaxAuth
+
+$_POST = Array
+(
+    [set_filter] => 1
+    [display] => 
+    [ajax_page] => 1
+    [people_nearby] => 0
+    [i_am_here_to] => 1
+    [p_orientation] => Array
+        (
+            [0] => 1
+        )
+
+    [p_age_from] => 18
+    [p_age_to] => 100
+    [radius] => 0
+    [status] => 
+    [with_photo] => 1
+    [global_search_by_username] => 
+)
+
+---------
+
