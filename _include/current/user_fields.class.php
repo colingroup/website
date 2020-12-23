@@ -1908,6 +1908,7 @@ class UserFields extends CHtmlBlock
             array_push($mod_users, $mod_user);
         }
         foreach($mod_users as $mod_user){
+            // TODO conda pushnotification
             PushNotification::send((int)$mod_user['user_id'], 'Hi '. $mod_user['name'] .'. Please check it out. Moderator(Text) need approval.');
         }
     }

@@ -1,1 +1,4 @@
 _include/current/misc/ip.db
+_files/cache/*
+_include/current/*
+_include/current/user_fields.class.php

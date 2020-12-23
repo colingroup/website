@@ -1,1 +1,0 @@
-a:2:{s:14:"to_php_alfabet";a:1:{s:0:"";s:0:"";}s:15:"html_block_vars";a:1:{s:14:"arrayKeysCache";a:6:{s:21:"feed_comment_top_show";i:21;s:33:"wall_feed_comment_bottom_frm_show";i:33;s:19:"wall_module_comment";i:19;s:20:"update_counter_posts";i:20;s:4:"main";i:4;s:29:"update_counter_posts_add_item";i:29;}}}
